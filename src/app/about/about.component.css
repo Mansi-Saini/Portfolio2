@@ -1,0 +1,380 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@media only screen and (max-width: 750px) {
+    .cover {
+        z-index: 2;
+        margin: 0;
+        height: 100vh;
+        width: 100vw;
+        background-color: #de34de;
+        bottom: 0vh;
+        position: relative;
+        font-family: Inria Sans;
+    }
+
+    .cover .div1 {
+        font-size: 5rem;
+        position: absolute;
+        top: 6%;
+        left: 10%;
+    }
+
+    .cover .div2 {
+        font-size: 2rem;
+        position: absolute;
+        top: 19%;
+        left: 10%;
+    }
+
+    .cover .div3 {
+        font-size: 1.5rem;
+        position: absolute;
+        bottom: 20%;
+        right: 12%;
+    }
+
+    .onExitCover {
+        animation: cover;
+        opacity: 1;
+        animation-duration: 3s;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease-in-out;
+    }
+
+    @keyframes cover {
+        from {
+            right: 0vw;
+            opacity: 1;
+        }
+
+        to {
+            right: 100vw;
+            opacity: 0;
+        }
+    }
+
+    .container {
+        position: fixed;
+        top: 0;
+        display: grid;
+        grid-template-rows: 7vh max-content;
+        font-family: Inria Sans;
+        z-index: 1;
+        margin: 0 1vw;
+    }
+
+    .nav {
+        position: sticky;
+        top: 0;
+        z-index: 100;
+        background-color: white;
+        font-family: Inria Sans;
+        align-self: center;
+        display: grid;
+        grid-template-columns: 12vw 12vw;
+        justify-content: end;
+        font-family: Inria Sans;
+        font-size: 3vw;
+        height: 7vh;
+        align-items: center;
+        font-weight: 700;
+    }
+
+    .nav p {
+        cursor: pointer;
+    }
+
+
+    .content {
+        display: grid;
+        grid-template-rows:8vh 36vh 38vh 5vh;
+        grid-template-columns: 30vw 30vw 38vw;
+    }
+
+    .image {
+        grid-row-start: 1;
+        grid-row-end: 3;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        display: grid;
+    }
+
+    .image hr {
+        width: 100vw;
+        position: absolute;
+        top: 16%;
+        z-index: 0;
+    }
+
+    .image img {
+        height: 28vw;
+        border-radius: 50%;
+        z-index: 1;
+        justify-self: end;
+        margin-right: 4vw;
+    }
+
+    .pageHeading {
+        grid-row-start: 1;
+        grid-row-end: 2;
+        grid-column-start: 2;
+        grid-column-end: 4;
+        display: grid;
+        color: #EC50F9;
+        text-align: justify;
+        font-family: Inter;
+        font-size: 9vw;
+        align-self: end;
+    }
+
+    .about {
+        font-size: 3vw;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        grid-column-start: 2;
+        grid-column-end: 4;
+        display: grid;
+        width: 62vw;
+        text-align: justify;
+        align-self: center;
+    }
+
+    .skills {
+        grid-row-start: 3;
+        grid-row-end: 4;
+        grid-column-start: 2;
+        grid-column-end: 3;
+        display: grid;
+        grid-template-rows: 4vh 34vh;
+    }
+
+    .heading {
+        font-size: 3vw;
+        color: #EC50F9;
+        font-weight: 600;
+        font-family: Inter;
+    }
+
+    .education {
+        grid-row-start: 3;
+        grid-row-end: 4;
+        grid-column-start: 3;
+        grid-column-end: 4;
+        display: grid;
+        grid-template-rows: 4vh 34vh;
+    }
+
+    .skillContent {
+        display: grid;
+        font-size: 3vw;
+    }
+
+    .resume{
+        grid-row-start: 4;
+    grid-row-end: 5;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    display: grid;
+    justify-content: center;
+    }
+
+    .resume button{
+        width: fit-content;
+        padding: 7px;
+        border-radius: 7px;
+    }
+
+
+}
+
+                        @media only screen and (min-width: 750px) {
+
+                            /* .cover {
+                                z-index: 2;
+                                margin: 0;
+                                height: 100vh;
+                                width: 100vw;
+                                background-color: #de34de;
+                                bottom: 0vh;
+                                position: relative;
+                                font-family: Inria Sans;
+                            }
+
+                            .cover .div1 {
+                                font-size: 5rem;
+                                position: absolute;
+                                top: 6%;
+                                left: 10%;
+                            }
+
+                            .cover .div2 {
+                                font-size: 2rem;
+                                position: absolute;
+                                top: 19%;
+                                left: 10%;
+                            }
+
+                            .cover .div3 {
+                                font-size: 1.5rem;
+                                position: absolute;
+                                bottom: 20%;
+                                right: 12%;
+                            }
+
+                            .onExitCover {
+                                animation: cover;
+                                opacity: 1;
+                                animation-duration: 3s;
+                                animation-fill-mode: forwards;
+                                animation-timing-function: ease-in-out;
+                            }
+
+                            @keyframes cover {
+                                from {
+                                    right: 0vw;
+                                    opacity: 1;
+                                }
+
+                                to {
+                                    right: 100vw;
+                                    opacity: 0;
+                                }
+                            } */
+
+                            .container {
+                                position: fixed;
+                                top: 0;
+                                display: grid;
+                                grid-template-rows: 7vh max-content;
+                                font-family: Inria Sans;
+                                z-index: 1;
+                            }
+
+                            .nav {
+                                position: sticky;
+                                top: 0;
+                                z-index: 100;
+                                background-color: white;
+                                font-family: Inria Sans;
+                                align-self: center;
+                                display: grid;
+                                grid-template-columns: 6vw 6vw;
+                                justify-content: end;
+                                font-family: Inria Sans;
+                                font-size: 1vw;
+                                height: 7vh;
+                                align-items: center;
+                                font-weight: 700;
+                            }
+
+                            .nav p {
+                                cursor: pointer;
+                            }
+
+
+                            .content {
+                                display: grid;
+                                grid-template-rows: 15vh 20vh 40vh 5vh;
+                                grid-template-columns: 30vw 23vw 47vw;
+                            }
+
+                            .image {
+                                grid-row-start: 1;
+                                grid-row-end: 3;
+                                grid-column-start: 1;
+                                grid-column-end: 2;
+                                display: grid;
+                            }
+
+                            .image hr {
+                                width: 100vw;
+                                position: absolute;
+                                top: 26%;
+                                z-index: 0;
+                            }
+
+                            .image img {
+                                height: 14vw;
+                                border-radius: 50%;
+                                z-index: 1;
+                                justify-self: end;
+                                margin-right: 4vw;
+                            }
+
+                            .pageHeading {
+                                grid-row-start: 1;
+                                grid-row-end: 2;
+                                grid-column-start: 2;
+                                grid-column-end: 3;
+                                display: grid;
+                                color: #EC50F9;
+                                text-align: justify;
+                                font-family: Inter;
+                                font-size: 4vw;
+                                align-self: end;
+                            }
+
+                            .about {
+                                grid-row-start: 2;
+                                grid-row-end: 3;
+                                grid-column-start: 2;
+                                grid-column-end: 4;
+                                display: grid;
+                                width: 58vw;
+                                text-align: justify;
+                                align-self: center;
+                                font-size: 1vw;
+                            }
+
+                            .skills {
+                                grid-row-start: 3;
+                                grid-row-end: 4;
+                                grid-column-start: 2;
+                                grid-column-end: 3;
+                                display: grid;
+                                grid-template-rows: 6vh 34vh;
+                            }
+
+                            .heading {
+                                font-size: 2vw;
+                                color: #EC50F9;
+                                font-weight: 600;
+                                font-family: Inter;
+                            }
+
+                            .education {
+                                grid-row-start: 3;
+                                grid-row-end: 4;
+                                grid-column-start: 3;
+                                grid-column-end: 4;
+                                display: grid;
+                                grid-template-rows: 6vh 34vh;
+                            }
+
+                            .skillContent {
+                                display: grid;
+                            }
+
+                            .resume{
+                                grid-row-start: 4;
+                            grid-row-end: 5;
+                            grid-column-start: 3;
+                            grid-column-end: 4;
+                            display: grid;
+                            justify-content: center;
+                            }
+                        
+                            .resume button{
+                                width: fit-content;
+                                padding: 7px;
+                                border-radius: 7px;
+                                background-color: #d814ea;
+                                color: white;
+                                border: none;
+                                cursor: pointer;
+                            }
+                        
+                        }

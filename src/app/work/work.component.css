@@ -1,0 +1,1161 @@
+@media only screen and (max-width: 750px){
+
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .container {
+        display: grid;
+        grid-template-rows: 7vh max-content;
+        font-family: Inria Sans;
+}
+
+
+.font1 {
+    color: #EC50F9;
+    font-family: Alex Brush;
+}
+
+.font2 {
+    color: #000;
+    font-family: Inria Sans;
+}
+
+.fixed {
+    /* position: relative; */
+    width: 46vw;
+}
+
+.fade {
+    width: 0;
+    overflow: hidden;
+    animation: showHide 2s ease-in-out forwards;
+}
+
+@keyframes showHide {
+    from {
+        width: 0
+    }
+    
+    to {
+        width: 46vw;
+    }
+}
+
+button{
+    cursor: pointer;
+}
+
+.nav {
+    position: sticky; 
+    top: 0;
+    z-index: 100;
+    background-color: white;
+    font-family: Inria Sans;
+    align-self: center;
+    display: grid;
+    grid-template-columns: 12vw 12vw;
+        justify-content: end;
+        font-family: Inria Sans;
+        font-size: 2.2vw;
+    height: 7vh;
+    align-items: center;
+    font-weight: 700;
+}
+
+.nav p {
+    cursor: pointer;
+}
+
+.line {
+    display: grid;
+}
+
+.line .verticalLine {
+    /* rotate: 90deg;
+    width: 653vh;
+    position: absolute;
+    background-color: rgb(0, 0, 0);
+    height: 1px;
+    align-self: center;
+    justify-self: center;
+    z-index: 0;
+    top: 338vh; */
+    display: none;
+}
+
+.project {
+    z-index: 1;
+    display: grid;
+    grid-template-columns: 49vw 2vw 49vw;
+    grid-template-rows: 12vh 30vh 30vh 30vh;
+}
+
+.dot {
+    /* background-color: #F4C2F8;
+    height: 4vw;
+    width: 4vw; */
+    border-radius: 50%;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    /* display: flex; */
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    z-index: 1;
+    display: hidden;
+}
+
+.dot img {
+    /* z-index: 2;
+    height: 2vw;
+    width: 2vw; */
+    display: none;
+}
+
+.dot1 {
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.dot2 {
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+.dot3 {
+    grid-row-start: 4;
+    grid-row-end: 5;
+}
+
+.heading {
+    width: max-content;
+    height: 10vh;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    display: grid;
+    align-self: center;
+    justify-self: center;
+    /* height: 5vh; */
+    z-index: 1;
+    background-color: white;
+    border: none;
+}
+
+.heading h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12vw;
+}
+
+.heading hr {
+    height: 0;
+}
+
+.sectionLeft {
+    display: grid;
+    /* grid-template-columns: 34vw 14vw; */
+    align-items: center;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    cursor: pointer;
+}
+
+.sectionRight {
+    cursor: pointer;
+    display: grid;
+    /* grid-template-columns: 14vw 34vw; */
+    align-items: center;
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+
+.project .section1 {
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.project .section2 {
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+.project .section3 {
+    grid-row-start: 4;
+    grid-row-end: 5;
+}
+
+.content {
+    z-index: 3;
+    border-radius: 10px;
+    display: grid;
+    grid-template-rows: max-content max-content;
+    width: 0;
+    overflow: hidden;
+    height: 30vh;
+    background-color: rgb(255 201 255);
+    transition: transform .2s;
+}
+
+.content:hover {
+    transform: scale(1.3);
+}
+
+.contentLine {
+    /* font-family: Inria Sans;
+    font-size: 1vw;
+    position: relative;
+    font-weight: 500;
+    height: 37vh; */
+    display: none;
+}
+
+.contentLine hr {
+    height: 0;
+    z-index: 0;
+    width: 14vw;
+    position: absolute;
+    top: 50%;
+}
+
+.contentLine p {
+    position: absolute;
+    top: 51%;
+    text-align: center;
+    width: 14vw;
+}
+
+.contentLeft {
+    /* width: 0;
+    overflow: hidden;
+    height: 37vh;
+    background-color: rgba(252, 152, 254, 0.42); */
+    justify-self: flex-end;
+    /* border-radius: 10px;
+    display: grid;
+    grid-template-rows: max-content max-content; */
+}
+
+.contentRight {
+    /* width: 0;
+    overflow: hidden;
+    height: 37vh;
+    background-color: rgba(252, 152, 254, 0.42); */
+    justify-self: flex-start;
+    /* border-radius: 10px;
+    display: grid;
+    grid-template-rows: max-content max-content; */
+}
+
+.desc {
+    font-size: 3vw;
+    width: 44vw;
+    justify-self: center;
+    text-align: justify;
+    font-family: Inria Sans;
+    display: grid;
+    grid-gap: 5px;
+}
+
+.desc h3 {
+    font-size: 4vw;
+    color: #AA00AE;
+    font-family: Inria Sans;
+}
+
+.contentImg {
+    width: 46vw;
+}
+
+.research {
+    z-index: 1;
+    display: grid;
+    grid-template-columns: 49vw 2vw 49vw;
+    grid-template-rows: 12vh 30vh;
+}
+
+.research .section4 {
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+
+
+.certificate {
+    z-index: 1;
+    display: grid;
+    grid-template-columns: 49vw 2vw 49vw;
+    grid-template-rows: 12vh 30vh 30vh 30vh 30vh 30vh 30vh 30vh 30vh 30vh 30vh;
+}
+
+.certificate .section5 {
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.certificate .section6 {
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+.certificate .section7 {
+    grid-row-start: 4;
+    grid-row-end: 5;
+}
+
+.certificate .section8 {
+    grid-row-start: 5;
+    grid-row-end: 6;
+}
+
+.certificate .section9 {
+    grid-row-start: 6;
+    grid-row-end: 7;
+}
+
+.certificate .section10 {
+    grid-row-start: 7;
+    grid-row-end: 8;
+}
+
+.certificate .section11 {
+    grid-row-start: 8;
+    grid-row-end: 9;
+}
+
+.certificate .section12{
+    grid-row-start: 9;
+    grid-row-end: 10;
+}
+
+.certificate .section13 {
+    grid-row-start: 10;
+    grid-row-end: 11;
+}
+
+.certificate .section14 {
+    grid-row-start: 11;
+    grid-row-end: 12;
+}
+
+.article {
+    z-index: 1;
+    display: grid;
+    grid-template-columns: 49vw 2vw 49vw;
+    grid-template-rows: 12vh 30vh 30vh;
+}
+
+.article .section15 {
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.article .section16 {
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+
+
+.modal {
+    
+    display: none;
+    /* Hidden by default */
+    
+}
+
+/* modal */
+#myModal {
+    position: fixed !important;
+    /* Stay in place */
+    z-index: 1000 !important;
+    /* Sit on top */
+    left: 0 !important;
+    top: 0 !important;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+    /* position: relative; */
+    
+}
+
+/* Modal Content/Box */
+.modal-content {
+    padding: 0 20px 20px 20px;
+    background-color: #fefefe;
+    margin: 2% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80vw;
+    height: 86%;
+    display: grid;
+    overflow-y: scroll;
+    grid-gap: 1vw;
+    grid-template-rows: max-content max-content max-content max-content;
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-content .title {
+    align-self: center;
+    justify-self: center;
+    font-size: 2vw;
+    color: #870289;
+    font-weight: 700;
+}
+
+.modal-content .aboutProject {
+    padding: 10px;
+    display: grid;
+    grid-gap: 2vh;
+    background-color: rgba(252, 152, 254, 0.42);
+    border-radius: 10px;
+}
+
+.modal-content .aboutProject h3 {
+    color: #AA00AE;
+    font-weight: 700;
+}
+
+.modal-content .about {
+    display: grid;
+    grid-gap: 1vh;
+}
+
+.modal-content .tech {
+    display: grid;
+    grid-gap: 1vh;
+}
+
+.modal-content .tech ul {
+    list-style-type: circle;
+    padding-left: 20px;
+}
+
+.modal-content .aboutProject button{
+    width: max-content;
+    font-size: 1.2vw;
+    padding: 6px;
+    justify-self: end;
+    border: none;
+    border-radius: 6px;
+    background-color: #870289;
+    color: white;
+}
+
+
+/* slideShow */
+.mySlides {
+    display: none
+}
+
+.mySlides img {
+    vertical-align: middle;
+    border-radius: 10px;
+}
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* The dots/bullets/indicators */
+.slideDot {
+    cursor: pointer;
+    height: 8px;
+    width: 8px;
+    margin: 0 2px;
+    background-color:#f2cdf3;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    transition: transform .2s;
+}
+
+.active,
+.slideDot:hover {
+    background-color: #AA00AE;
+    transform: scale(1.3);
+}
+
+/* Fading animation */
+.fadeSlide {
+    animation-name: fadeSlide;
+    animation-duration: 1.5s;
+}
+
+@keyframes fadeSlide {
+    from {
+        opacity: .4
+    }
+    
+    to {
+        opacity: 1
+    }
+}
+
+}
+
+                                @media only screen and (min-width: 750px){
+
+                                    .container {
+                                        display: grid;
+                                        grid-template-rows: 7vh max-content;
+                                        font-family: Inria Sans;
+                                }
+
+                                .onExit{
+                                    display: grid;
+                                    grid-template-rows: 7vh max-content;
+                                    font-family: Inria Sans;
+                                    bottom: 0vh;
+                                    animation: exit;
+                                    animation-duration: 2s;
+                                    animation-fill-mode: forwards;
+                                    /* animation-delay: 6s; */
+                                    animation-timing-function: ease-in-out;
+                                }
+
+                                @keyframes exit {
+                                    from{bottom: 0vh}
+                                    to{bottom: 100vh}
+                                }
+
+
+                                .font1 {
+                                    color: #EC50F9;
+                                    font-family: Alex Brush;
+                                }
+
+                                .font2 {
+                                    color: #000;
+                                    font-family: Inria Sans;
+                                }
+
+                                .fixed {
+                                    /* position: relative; */
+                                    width: 16vw;
+                                }
+
+                                .fade {
+                                    width: 0;
+                                    overflow: hidden;
+                                    animation: showHide 2s ease-in-out forwards;
+                                }
+
+                                @keyframes showHide {
+                                    from {
+                                        width: 0
+                                    }
+                                    
+                                    to {
+                                        width: 16vw;
+                                    }
+                                }
+
+                                .fadeOut {
+                                    width: 16vw;
+                                    overflow: hidden;
+                                    animation: Hide 2s ease-in-out forwards;
+                                }
+
+                                @keyframes Hide {
+                                    from {
+                                        width: 16vw
+                                    }
+                                    
+                                    to {
+                                        width: 0;
+                                    }
+                                }
+
+                                .nav {
+                                    position: sticky; 
+                                    top: 0;
+                                    z-index: 100;
+                                    background-color: white;
+                                    font-family: Inria Sans;
+                                    align-self: center;
+                                    display: grid;
+                                    grid-template-columns: 6vw 6vw;
+                                    justify-content: end;
+                                    font-family: Inria Sans;
+                                    font-size: 1vw;
+                                    height: 7vh;
+                                    align-items: center;
+                                    font-weight: 700;
+                                }
+
+                                .nav p {
+                                    cursor: pointer;
+                                }
+
+                                .line {
+                                    display: grid;
+                                }
+
+                                .line .verticalLine {
+                                    rotate: 90deg;
+                                    width: 653vh;
+                                    position: absolute;
+                                    background-color: rgb(0, 0, 0);
+                                    height: 1px;
+                                    align-self: center;
+                                    justify-self: center;
+                                    z-index: 0;
+                                    top: 338vh;
+                                }
+
+                                .project {
+                                    z-index: 1;
+                                    display: grid;
+                                    grid-template-columns: 48vw 4vw 48vw;
+                                    grid-template-rows: 12vh 37vh 37vh 37vh;
+                                }
+
+                                .dot {
+                                    background-color: #F4C2F8;
+                                    height: 4vw;
+                                    width: 4vw;
+                                    border-radius: 50%;
+                                    grid-column-start: 2;
+                                    grid-column-end: 3;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    align-self: center;
+                                    z-index: 1;
+                                }
+
+                                .dot img {
+                                    z-index: 2;
+                                    height: 2vw;
+                                    width: 2vw;
+                                }
+
+                                .dot1 {
+                                    grid-row-start: 2;
+                                    grid-row-end: 3;
+                                }
+
+                                .dot2 {
+                                    grid-row-start: 3;
+                                    grid-row-end: 4;
+                                }
+
+                                .dot3 {
+                                    grid-row-start: 4;
+                                    grid-row-end: 5;
+                                }
+
+                                .heading {
+                                    width: max-content;
+                                    height: 10vh;
+                                    grid-row-start: 1;
+                                    grid-row-end: 2;
+                                    grid-column-start: 1;
+                                    grid-column-end: 4;
+                                    display: grid;
+                                    align-self: center;
+                                    justify-self: center;
+                                    /* height: 5vh; */
+                                    z-index: 1;
+                                    background-color: white;
+                                    border: none;
+                                }
+
+                                .heading h2 {
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    font-size: 3.5vw;
+                                }
+
+                                .heading hr {
+                                    height: 0;
+                                }
+
+                                .sectionLeft {
+                                    display: grid;
+                                    grid-template-columns: 34vw 14vw;
+                                    align-items: center;
+                                    grid-column-start: 1;
+                                    grid-column-end: 2;
+                                    cursor: pointer;
+                                }
+
+                                .sectionRight {
+                                    cursor: pointer;
+                                    display: grid;
+                                    grid-template-columns: 14vw 34vw;
+                                    align-items: center;
+                                    grid-column-start: 3;
+                                    grid-column-end: 4;
+                                }
+
+                                .project .section1 {
+                                    grid-row-start: 2;
+                                    grid-row-end: 3;
+                                }
+
+                                .project .section2 {
+                                    grid-row-start: 3;
+                                    grid-row-end: 4;
+                                }
+
+                                .project .section3 {
+                                    grid-row-start: 4;
+                                    grid-row-end: 5;
+                                }
+
+                                .content {
+                                    z-index: 3;
+                                    border-radius: 10px;
+                                    display: grid;
+                                    grid-template-rows: max-content max-content;
+                                    width: 0;
+                                    overflow: hidden;
+                                    height: 37vh;
+                                    background-color: rgb(255 201 255);
+                                    transition: transform .2s;
+                                }
+
+                                .content:hover {
+                                    transform: scale(1.3);
+                                }
+
+                                .contentLine {
+                                    font-family: Inria Sans;
+                                    font-size: 1vw;
+                                    position: relative;
+                                    font-weight: 500;
+                                    height: 37vh;
+                                }
+
+                                .contentLine hr {
+                                    height: 0;
+                                    z-index: 0;
+                                    width: 14vw;
+                                    position: absolute;
+                                    top: 50%;
+                                }
+
+                                .contentLine p {
+                                    position: absolute;
+                                    top: 51%;
+                                    text-align: center;
+                                    width: 14vw;
+                                }
+
+                                .contentLeft {
+                                    /* width: 0;
+                                    overflow: hidden;
+                                    height: 37vh;
+                                    background-color: rgba(252, 152, 254, 0.42); */
+                                    justify-self: flex-end;
+                                    /* border-radius: 10px;
+                                    display: grid;
+                                    grid-template-rows: max-content max-content; */
+                                }
+
+                                .contentRight {
+                                    /* width: 0;
+                                    overflow: hidden;
+                                    height: 37vh;
+                                    background-color: rgba(252, 152, 254, 0.42); */
+                                    justify-self: flex-start;
+                                    /* border-radius: 10px;
+                                    display: grid;
+                                    grid-template-rows: max-content max-content; */
+                                }
+
+                                .desc {
+                                    width: 14vw;
+                                    justify-self: center;
+                                    text-align: justify;
+                                    font-family: Inria Sans;
+                                    display: grid;
+                                    grid-gap: 5px;
+                                }
+
+                                .desc h3 {
+                                    color: #AA00AE;
+                                    font-family: Inria Sans;
+                                }
+
+                                .contentImg {
+                                    width: 16vw;
+                                }
+
+                                .research {
+                                    z-index: 1;
+                                    display: grid;
+                                    grid-template-columns: 48vw 4vw 48vw;
+                                    grid-template-rows: 12vh 37vh;
+                                }
+
+                                .research .section4 {
+                                    grid-row-start: 2;
+                                    grid-row-end: 3;
+                                }
+
+
+
+                                .certificate {
+                                    z-index: 1;
+                                    display: grid;
+                                    grid-template-columns: 48vw 4vw 48vw;
+                                    grid-template-rows: 12vh 37vh 37vh 37vh 37vh 37vh 37vh 37vh 37vh 37vh 37vh;
+                                }
+
+                                .certificate .section5 {
+                                    grid-row-start: 2;
+                                    grid-row-end: 3;
+                                }
+
+                                .certificate .section6 {
+                                    grid-row-start: 3;
+                                    grid-row-end: 4;
+                                }
+
+                                .certificate .section7 {
+                                    grid-row-start: 4;
+                                    grid-row-end: 5;
+                                }
+
+                                .certificate .section8 {
+                                    grid-row-start: 5;
+                                    grid-row-end: 6;
+                                }
+
+                                .certificate .section9 {
+                                    grid-row-start: 6;
+                                    grid-row-end: 7;
+                                }
+
+                                .certificate .section10 {
+                                    grid-row-start: 7;
+                                    grid-row-end: 8;
+                                }
+
+                                .certificate .section11 {
+                                    grid-row-start: 8;
+                                    grid-row-end: 9;
+                                }
+
+                                .certificate .section12{
+                                    grid-row-start: 9;
+                                    grid-row-end: 10;
+                                }
+
+                                .certificate .section13 {
+                                    grid-row-start: 10;
+                                    grid-row-end: 11;
+                                }
+
+                                .certificate .section14 {
+                                    grid-row-start: 11;
+                                    grid-row-end: 12;
+                                }
+
+                                .article {
+                                    z-index: 1;
+                                    display: grid;
+                                    grid-template-columns: 48vw 4vw 48vw;
+                                    grid-template-rows: 12vh 37vh 37vh;
+                                }
+
+                                .article .section15 {
+                                    grid-row-start: 2;
+                                    grid-row-end: 3;
+                                }
+
+                                .article .section16 {
+                                    grid-row-start: 3;
+                                    grid-row-end: 4;
+                                }
+
+
+
+                                .modal {
+                                    
+                                    display: none;
+                                    /* Hidden by default */
+                                    
+                                }
+
+                                /* modal */
+                                #myModal {
+                                    position: fixed !important;
+                                    /* Stay in place */
+                                    z-index: 1000 !important;
+                                    /* Sit on top */
+                                    left: 0 !important;
+                                    top: 0 !important;
+                                    width: 100%;
+                                    /* Full width */
+                                    height: 100%;
+                                    /* Full height */
+                                    overflow: auto;
+                                    /* Enable scroll if needed */
+                                    background-color: rgb(0, 0, 0);
+                                    /* Fallback color */
+                                    background-color: rgba(0, 0, 0, 0.4);
+                                    /* Black w/ opacity */
+                                    /* position: relative; */
+                                    
+                                }
+
+                                /* Modal Content/Box */
+                                .modal-content {
+                                    padding: 0 20px 20px 20px;
+                                    background-color: #fefefe;
+                                    margin: 2% auto;
+                                    padding: 20px;
+                                    border: 1px solid #888;
+                                    width: 50vw;
+                                    height: 86%;
+                                    display: grid;
+                                    overflow-y: scroll;
+                                    grid-gap: 1vw;
+                                    grid-template-rows: max-content max-content max-content max-content;
+                                }
+
+                                /* The Close Button */
+                                .close {
+                                    color: #aaa;
+                                    float: right;
+                                    font-size: 28px;
+                                    font-weight: bold;
+                                }
+
+                                .close:hover,
+                                .close:focus {
+                                    color: black;
+                                    text-decoration: none;
+                                    cursor: pointer;
+                                }
+
+                                .modal-content .title {
+                                    align-self: center;
+                                    justify-self: center;
+                                    font-size: 2vw;
+                                    color: #870289;
+                                    font-weight: 700;
+                                }
+
+                                .modal-content .aboutProject {
+                                    padding: 10px;
+                                    display: grid;
+                                    grid-gap: 2vh;
+                                    background-color: rgba(252, 152, 254, 0.42);
+                                    border-radius: 10px;
+                                }
+
+                                .modal-content .aboutProject h3 {
+                                    color: #AA00AE;
+                                    font-weight: 700;
+                                }
+
+                                .modal-content .about {
+                                    display: grid;
+                                    grid-gap: 1vh;
+                                }
+
+                                .modal-content .tech {
+                                    display: grid;
+                                    grid-gap: 1vh;
+                                }
+
+                                .modal-content .tech ul {
+                                    list-style-type: circle;
+                                    padding-left: 20px;
+                                }
+
+                                .modal-content .aboutProject button{
+                                    width: max-content;
+                                    font-size: 1.2vw;
+                                    padding: 6px;
+                                    justify-self: end;
+                                    border: none;
+                                    border-radius: 6px;
+                                    background-color: #870289;
+                                    color: white;
+                                }
+
+
+                                /* slideShow */
+                                .mySlides {
+                                    display: none
+                                }
+
+                                .mySlides img {
+                                    vertical-align: middle;
+                                    border-radius: 10px;
+                                }
+
+                                /* Slideshow container */
+                                .slideshow-container {
+                                    max-width: 1000px;
+                                    position: relative;
+                                    margin: auto;
+                                }
+
+                                /* Next & previous buttons */
+                                .prev,
+                                .next {
+                                    cursor: pointer;
+                                    position: absolute;
+                                    top: 50%;
+                                    width: auto;
+                                    padding: 16px;
+                                    margin-top: -22px;
+                                    color: white;
+                                    font-weight: bold;
+                                    font-size: 18px;
+                                    transition: 0.6s ease;
+                                    border-radius: 0 3px 3px 0;
+                                    user-select: none;
+                                }
+
+                                /* Position the "next button" to the right */
+                                .next {
+                                    right: 0;
+                                    border-radius: 3px 0 0 3px;
+                                }
+
+                                /* On hover, add a black background color with a little bit see-through */
+                                .prev:hover,
+                                .next:hover {
+                                    background-color: rgba(0, 0, 0, 0.8);
+                                }
+
+                                /* Caption text */
+                                .text {
+                                    color: #f2f2f2;
+                                    font-size: 15px;
+                                    padding: 8px 12px;
+                                    position: absolute;
+                                    bottom: 8px;
+                                    width: 100%;
+                                    text-align: center;
+                                }
+
+                                /* Number text (1/3 etc) */
+                                .numbertext {
+                                    color: #f2f2f2;
+                                    font-size: 12px;
+                                    padding: 8px 12px;
+                                    position: absolute;
+                                    top: 0;
+                                }
+
+                                /* The dots/bullets/indicators */
+                                .slideDot {
+                                    cursor: pointer;
+                                    height: 8px;
+                                    width: 8px;
+                                    margin: 0 2px;
+                                    background-color:#f2cdf3;
+                                    border-radius: 50%;
+                                    display: inline-block;
+                                    transition: background-color 0.6s ease;
+                                    transition: transform .2s;
+                                }
+
+                                .active,
+                                .slideDot:hover {
+                                    background-color: #AA00AE;
+                                    transform: scale(1.3);
+                                }
+
+                                /* Fading animation */
+                                .fadeSlide {
+                                    animation-name: fadeSlide;
+                                    animation-duration: 1.5s;
+                                }
+
+                                @keyframes fadeSlide {
+                                    from {
+                                        opacity: .4
+                                    }
+                                    
+                                    to {
+                                        opacity: 1
+                                    }
+                                }
+                                }

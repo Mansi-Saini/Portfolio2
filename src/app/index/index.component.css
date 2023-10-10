@@ -1,0 +1,537 @@
+@media only screen and (max-width: 750px)
+{
+    .cover{
+    
+        z-index: 2;
+        margin: 0;
+        height: 100vh;
+        width: 100vw;
+        background-color: #f3d0f3;
+        bottom: 0vh;
+        position: relative;
+        animation: cover;
+        animation-duration: 3s;
+        animation-fill-mode: forwards;
+        animation-delay: 6s;
+        animation-timing-function: ease-in-out;
+    }
+    
+    @keyframes cover {
+        from{bottom: 0vh; }
+        to{bottom: 100vh; }
+    }
+
+    .img{
+        background-color: #ffe2ff;
+        height: 34vw;
+        width: 34vw;
+        display: inline-block;
+        align-items: end;
+        border-radius: 50%;
+        position: absolute;
+        z-index: 100;
+        top: 30%;
+        left: 30%;
+        animation: moveImg;
+        animation-duration: 4s;
+        animation-fill-mode: forwards;
+        animation-delay: 1s;
+    
+    }
+    
+    @keyframes moveImg{
+        from{top: 30%}
+        to{top: 22%}
+    }
+    
+    .girl{
+        width: 18vw;
+        left: 20%;
+        bottom: 0;
+        position: absolute;
+    }
+    
+    .hand{
+        width: 8vw;
+        left: 72%;
+        bottom: 2%;
+        position: absolute;
+        animation: rotation;
+        animation-duration: 1s;
+        animation-timing-function: linear;
+        animation-delay: 1s;
+        animation-iteration-count: infinite;
+    }
+    
+    @keyframes rotation {
+        0% {
+          transform: rotate(0deg);
+        }
+        50% {
+            transform: rotate(6deg);
+        }
+        
+        100%{
+            transform: rotate(0deg);
+        }
+      }
+    
+    .cover p{
+        font-family: DM Serif Text;
+        height: 34vw;
+        width: 34vw;
+        position: absolute;
+        top: 30%;
+        left: 34%;
+        display: flex;
+        align-items: center;
+        animation: moveP;
+        animation-duration: 4s;
+        animation-delay: 1s;
+        animation-fill-mode: forwards;
+        font-size: 4vw;
+    }
+    
+    @keyframes moveP{
+        from{top: 30%}
+        to{top: 42%}
+    }
+
+    .content{
+        z-index: 1;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        height: 100vh;
+        width: 100vw;
+        background-image: url('src/assets/img/background.png');
+        background-size: cover;
+        background-position: center;
+        color: white;
+        display: grid;
+        grid-template-rows: 10vh 56vh 34vh;
+    }
+    
+    .onExit{
+        
+        height: 100vh;
+        width: 100vw;
+        background-image: url('src/assets/img/background.png');
+        background-size: cover;
+        background-position: center;
+        position: relative ;
+        color: white;
+        display: grid;
+        grid-template-rows: 10vh 58vh 32vh;
+        bottom: 0vh;
+        animation: exit;
+        animation-duration: 2s;
+        animation-fill-mode: forwards;
+        /* animation-delay: 6s; */
+        animation-timing-function: ease-in-out;
+    }
+    
+    @keyframes exit {
+        from{bottom: 0vh}
+        to{bottom: 100vh}
+    }
+
+    .nav{
+        font-family: Inria Sans;
+        align-self: center;
+        display: grid;
+        grid-template-columns: 12vw 12vw;
+        justify-content: end;
+        font-family: Inria Sans;
+        font-size: 2.2vw;
+        height: 10vh;
+        align-items: center;
+    }
+    
+    .nav p{
+        cursor: pointer;
+    }
+    
+    .text{
+        align-self: center;
+        justify-self: center;
+        position: relative;
+        height: 27vh;
+        display: grid;
+        /* grid-auto-rows: 6vh 14vh 6vh 1vh; */
+        grid-template-rows: max-content max-content max-content max-content;
+    }
+    
+     .text .p1{
+        height: fit-content;
+        font-family: Alex Brush;
+        font-size: 6vw;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        transform: translateX(10%);
+    }
+     
+    .text .p2{
+        height: fit-content;
+        color: #F774E6;
+        text-align: center;
+        font-family: DM Serif Text;
+        font-size: 12vw;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        align-self: center;
+    }
+    
+     .text .p3{
+        height: fit-content;
+        color: #FFF;
+        text-align: center;
+        font-family: Inria Sans;
+        font-size: 3vw;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+    }
+    
+     .text .line{
+        width: 44vw;
+        transform: translateX(68%);
+        height: 0;
+        display: grid;
+        grid-template-columns: auto max-content;
+        align-items: center;
+    }
+    
+     .text .line hr{
+        width: 40vw;
+    }
+    
+     .text .line .dot{
+        width: 2vw;
+        height: 2vw;
+        border-radius: 50%;
+        background-color: white;
+    }
+
+    .contact{
+        display: grid;
+        justify-self: end;
+        margin-right: 4vw;
+        margin-bottom: 2vh;
+        cursor: pointer;
+    }
+    
+    .contactLink{
+        display: grid;
+        grid-template-columns: 14vw max-content;
+        align-items: center;
+        justify-items: center;
+        grid-gap: 12px;
+    }
+    
+    .contactLink img{
+        width: 8vw;
+    }
+    
+    .contactLink p{
+        width: 0;
+        overflow: hidden;
+        font-size: large;
+        justify-self: flex-end;
+    }
+    
+    
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@media only screen and (min-width: 750px){
+
+    .cover{
+        
+    z-index: 2;
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: #f3d0f3;
+    bottom: 0vh;
+    position: relative;
+    animation: cover;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-delay: 6s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes cover {
+    from{bottom: 0vh; }
+    to{bottom: 100vh; }
+}
+
+.onExitCover{
+    display: none;
+}
+
+.img{
+    background-color: #ffe2ff;
+    height: 39vh;
+    width: 39vh;
+    display: inline-block;
+    align-items: end;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 100;
+    top: 30%;
+    left: 40%;
+    animation: moveImg;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+
+}
+
+@keyframes moveImg{
+    from{left: 40%}
+    to{left: 30%}
+}
+
+.girl{
+    left: 20%;
+    bottom: 0;
+    position: absolute;
+}
+
+.hand{
+    left: 67%;
+    bottom: 0;
+    position: absolute;
+    animation: rotation;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes rotation {
+    0% {
+      transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(6deg);
+    }
+    
+    100%{
+        transform: rotate(0deg);
+    }
+}
+
+.cover p{
+    font-family: DM Serif Text;
+    height: 38vh;
+    width: 38vh;
+    position: absolute;
+    top: 30%;
+    left: 40%;
+    display: flex;
+    align-items: center;
+    animation: moveP;
+    animation-duration: 4s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    font-size: 2em;
+}
+
+@keyframes moveP{
+    from{left: 40%}
+    to{left: 50%}
+}
+
+.content{
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+    background-image: url('src/assets/img/background.png');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    display: grid;
+    grid-template-rows: 10vh 56vh 34vh;
+}
+
+.onExit{
+    height: 100vh;
+    width: 100vw;
+    background-image: url('src/assets/img/background.png');
+    background-size: cover;
+    background-position: center;
+    position: relative ;
+    color: white;
+    display: grid;
+    grid-template-rows: 10vh 58vh 32vh;
+    bottom: 0vh;
+    animation: exit;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    /* animation-delay: 6s; */
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes exit {
+    from{bottom: 0vh}
+    to{bottom: 100vh}
+}
+
+ .nav{
+    font-family: Inria Sans;
+    align-self: center;
+    display: grid;
+    grid-template-columns: 10vw 10vw;
+    justify-content: end;
+    font-family: Inria Sans;
+    font-size: 1.5vw;
+    height: 10vh;
+    align-items: center;
+}
+
+.nav p{
+    cursor: pointer;
+}
+
+.text{
+    align-self: center;
+    justify-self: center;
+    position: relative;
+    height: 27vh;
+    display: grid;
+    grid-auto-rows: 6vh 14vh 6vh 1vh;
+}
+
+ .text .p1{
+    font-family: Alex Brush;
+    font-size: 3.0625vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    transform: translateX(10%);
+}
+ 
+.text .p2{
+    color: #F774E6;
+    text-align: center;
+    font-family: DM Serif Text;
+    font-size: 6.3125vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    align-self: center;
+}
+
+ .text .p3{
+    color: #FFF;
+    text-align: center;
+    font-family: Inria Sans;
+    font-size: 1.875vw;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+ .text .line{
+    width: 27.9375vw;
+    position: absolute;
+    height: 0;
+    bottom: 23px;
+    left: 47%;
+    display: grid;
+    grid-template-columns: auto max-content;
+    align-items: center;
+}
+
+ .text .line hr{
+    width: 25.9375vw;
+}
+
+ .text .line .dot{
+    width: 1.1875vw;
+    height: 1.1875vw;
+    border-radius: 50%;
+    background-color: white;
+}
+
+ .contact{
+    display: grid;
+    justify-self: end;
+    margin-right: 4vw;
+    margin-bottom: 2vh;
+    cursor: pointer;
+}
+
+.contactLink{
+    display: grid;
+    grid-template-columns: 14vw max-content;
+    align-items: center;
+    justify-items: center;
+    grid-gap: 12px;
+}
+
+.contactLink img{
+    width: 3.5vw;
+}
+
+.contactLink img:hover{
+    transform: scale(1.5);
+}
+
+.contactLink p{
+    width: 0;
+    overflow: hidden;
+    font-size: large;
+    justify-self: flex-end;
+}
+
+.fade1{
+    width: 0;
+    overflow: hidden;
+    font-size: large;
+    justify-self: flex-end;
+    animation: showHide1 2s ease-in-out forwards;
+}
+
+
+@keyframes showHide1 {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 14vw;
+    }
+}
+
+.fade2{
+    width: 0;
+    overflow: hidden;
+    font-size: large;
+    justify-self: flex-end;
+    animation: showHide2 2s ease-in-out forwards;
+}
+
+
+@keyframes showHide2 {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 8vw;
+    }
+}
+
+}

@@ -1,0 +1,742 @@
+<div class="container" [ngClass]="{'onExit': exit, 'container': container}">
+    <div class="nav">
+        <p (click)="home()" >Home</p>
+        <p (click)="about()">About Me</p>
+    </div>
+
+
+    <div class="line">
+
+        <div class="verticalLine"></div>
+
+        <!-- -------------------------------------------------------------------------------------- -->
+        <!-- project division -->
+        <!-- -------------------------------------------------------------------------------------- -->
+
+        <div class="project">
+            <div class="dot1 dot" data-function="fadeFunction1"   #dot1>
+                <img src="assets/img/project/Project1.png" alt="">
+            </div>
+            <div class="dot2 dot" data-function="fadeFunction2"  #dot2>
+                <img src="assets/img/project/Project2.png" alt="">
+            </div>
+            <div class="dot3 dot" data-function="fadeFunction3" #dot3>
+                <img src="assets/img/project/Project3.png" alt="">
+            </div>
+            <div class="heading">
+                <h2>
+                    <p class="font1">My &nbsp;</p>
+                    <p class="font2">Projects</p>
+                </h2>
+                <hr>
+            </div>
+            <div class="section1 sectionLeft">
+
+                <div class="contentLeft content" (click)="open1()" [ngClass]="{'fade': fade1}">
+                    <div class="image fixed">
+                        <img src="assets/img/project/project1.1.png" alt="" class="contentImg">
+                    </div>
+                    <div class="desc fixed">
+                        <h3>Know Your Comments</h3>
+                        A web based application that extract comments from post link using APIs and analyze sentiment of
+                        comments on the post.
+                    </div>
+                </div>
+                <div class="contentLine">
+                    <hr>
+                    <p>Jan 2023</p>
+                </div>
+
+
+
+            </div>
+            <div class="section2 sectionRight">
+
+                <div class="contentLine">
+                    <hr>
+                    <p>July 2022</p>
+                </div>
+                <div class="contentRight content" (click)="open2()" [ngClass]="{'fade': fade2}">
+                    <div class="image fixed">
+                        <img src="assets/img/project/project2.1.png" alt="" class="contentImg">
+                    </div>
+                    <div class="desc fixed">
+                        <h3>Heart Disease Prediction</h3>
+                        A web application that predicts if a person have heart disease or not.
+                    </div>
+                </div>
+            </div>
+            <div class="section3 sectionLeft">
+
+                <div class="contentLeft content" (click)="open3()" [ngClass]="{'fade': fade3}">
+                    <div class="image fixed">
+                        <img src="assets/img/project/project3.1.png" alt="" class="contentImg">
+                    </div>
+                    <div class="desc fixed">
+                        <h3>Movie Rating Prediction</h3>
+                        A web-based application that predicts the rating of movies using 4 algorithms.
+                    </div>
+                </div>
+                <div class="contentLine">
+                    <hr>
+                    <p>March 2022</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- -------------------------------------------------------------------------------------- -->
+        <!-- reseach division -->
+        <!-- -------------------------------------------------------------------------------------- -->
+
+        <div class="research">
+            <div class="dot4 dot" data-function="fadeFunction4" #dot4>
+                <img src="assets/img/research/research1.png" alt="">
+            </div>
+
+            <div class="heading">
+                <hr>
+                <h2>
+                    <p class="font1">Research &nbsp;</p>
+                    <p class="font2">Work</p>
+                </h2>
+                <hr>
+            </div>
+            <div class="section4 sectionRight">
+
+                <div class="contentLine">
+                    <hr>
+                    <p>Oct 2020</p>
+                </div>
+                <div class="contentRight content" (click)="open4()" [ngClass]="{'fade': fade4}">
+                    <div class="image fixed">
+                        <img src="assets/img/research/research.png" alt="" class="contentImg">
+                    </div>
+                    <div class="desc fixed">
+                        <h3>Analysis of Twitter Reviews on Covid-19</h3>
+                        Analysis of Twitter Reviews on Covid-19 as Positive,Negative or Neutral.
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+
+    <!-- -------------------------------------------------------------------------------------- -->
+    <!-- Certificate division -->
+    <!-- -------------------------------------------------------------------------------------- -->
+
+    <div class="certificate">
+
+        <div class="dot5 dot" data-function="fadeFunction5"  #dot5>
+            <img src="assets/img/certificate/logo/certificate2.png" alt="">
+        </div>
+        <div class="dot6 dot" data-function="fadeFunction6"  #dot6>
+            <img src="assets/img/certificate/logo/certificate1.png" alt="">
+        </div>
+        <div class="dot7 dot" data-function="fadeFunction7"  #dot7>
+            <img src="assets/img/certificate/logo/certificate1.png" alt="">
+        </div>
+        <div class="dot8 dot" data-function="fadeFunction8"  #dot8>
+            <img src="assets/img/certificate/logo/certificate1.png" alt="">
+        </div>
+        <div class="dot9 dot" data-function="fadeFunction9"  #dot9>
+            <img src="assets/img/certificate/logo/certificate1.png" alt="">
+        </div>
+        <div class="dot10 dot" data-function="fadeFunction10"  #dot10>
+            <img src="assets/img/certificate/logo/certificate1.png" alt="">
+        </div>
+        <div class="dot11 dot" data-function="fadeFunction11" #dot11>
+            <img src="assets/img/certificate/logo/certificate3.png" alt="">
+        </div>
+        <div class="dot12 dot" data-function="fadeFunction12"  #dot12>
+            <img src="assets/img/certificate/logo/certificate1.png" alt="">
+        </div>
+        <div class="dot13 dot" data-function="fadeFunction13" #dot13>
+            <img src="assets/img/certificate/logo/certificate4.png" alt="">
+        </div>
+        <div class="dot14 dot" data-function="fadeFunction14"  #dot14>
+            <img src="assets/img/certificate/logo/certificate5.png" alt="">
+        </div>
+
+        <div class="heading">
+            <hr>
+            <h2>
+                <p class="font1">My &nbsp;</p>
+                <p class="font2">Certificates</p>
+            </h2>
+            <hr>
+        </div>
+
+        <div class="section5 sectionLeft">
+
+            <div class="contentLeft content" [ngClass]="{'fade': fade5}">
+                <div class="image fixed">
+                    <img src="assets/img/certificate/certificate1.png" alt="" class="contentImg">
+                </div>
+                <div class="desc fixed">
+                    <h3>Completion of Arduino Training by Spoken Tutorial Project, IIT Bombay.</h3>
+                </div>
+            </div>
+            <div class="contentLine">
+                <hr>
+                <p>Feb 2020</p>
+            </div>
+        </div>
+        <div class="section6 sectionRight">
+
+            <div class="contentLine">
+                <hr>
+                <p>July 2020</p>
+            </div>
+            <div class="contentRight content" [ngClass]="{'fade': fade6}">
+                <div class="image fixed">
+                    <img src="assets/img/certificate/certificate2.jpg" alt="" class="contentImg">
+                </div>
+                <div class="desc fixed">
+                    <h3>Specialization course of Python offered through Coursera (course 1).</h3>
+                   
+                </div>
+            </div>
+        </div>
+
+        <div class="section7 sectionLeft">
+
+            <div class="contentLeft content" [ngClass]="{'fade': fade7}">
+                <div class="image fixed">
+                    <img src="assets/img/certificate/certificate3.jpg" alt="" class="contentImg">
+                </div>
+                <div class="desc fixed">
+                    <h3>Specialization course of Python offered through Coursera (course 2).</h3>
+                </div>
+            </div>
+            <div class="contentLine">
+                <hr>
+                <p>July 2020</p>
+            </div>
+        </div>
+
+        <div class="section8 sectionRight">
+            <div class="contentLine">
+                <hr>
+                <p>Aug 2020</p>
+            </div>
+            <div class="contentRight content" [ngClass]="{'fade': fade8}">
+                <div class="image fixed">
+                    <img src="assets/img/certificate/certificate4.jpg" alt="" class="contentImg">
+                </div>
+                <div class="desc fixed">
+                    <h3>Specialization course of Python offered through Coursera (course 3).</h3>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="section9 sectionLeft">
+
+            <div class="contentLeft content" [ngClass]="{'fade': fade9}">
+                <div class="image fixed">
+                    <img src="assets/img/certificate/certificate5.jpg" alt="" class="contentImg">
+                </div>
+                <div class="desc fixed">
+                    <h3>Specialization course of Python offered through Coursera (course 4).</h3>
+                </div>
+            </div>
+            <div class="contentLine">
+                <hr>
+                <p>Aug 2020</p>
+            </div>
+        </div>
+
+        <div class="section10 sectionRight">
+
+            <div class="contentLine">
+                <hr>
+                <p>Sept 2020</p>
+            </div>
+            <div class="contentRight content" [ngClass]="{'fade': fade10}">
+                <div class="image fixed">
+                    <img src="assets/img/certificate/certificate6.jpg" alt="" class="contentImg">
+                </div>
+                <div class="desc fixed">
+                    <h3>Specialization course of Python offered through Coursera (course 5).</h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="section11 sectionLeft">
+
+            <div class="contentLeft content" [ngClass]="{'fade': fade11}">
+                <div class="image fixed">
+                    <img src="assets/img/certificate/certificate7.png" alt="" class="contentImg">
+                </div>
+                <div class="desc fixed">
+                    <h3>Problem Solving (Basic) assessment from HackerRank</h3>
+                </div>
+            </div>
+            <div class="contentLine">
+                <hr>
+                <p>Sept 2020</p>
+            </div>
+        </div>
+
+        <div class="section12 sectionRight">
+            <div class="contentLine">
+                <hr>
+                <p>Sept 2020</p>
+            </div>
+            <div class="contentRight content" [ngClass]="{'fade': fade12}">
+                <div class="image fixed">
+                    <img src="assets/img/certificate/certificate8.png" alt="" class="contentImg">
+                </div>
+                <div class="desc fixed">
+                    <h3>Python (Basic) assessment from HackerRank.</h3>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="section13 sectionLeft">
+
+            <div class="contentLeft content" [ngClass]="{'fade': fade13}">
+                <div class="image fixed">
+                    <img src="assets/img/certificate/certificate9.png" alt="" class="contentImg">
+                </div>
+                <div class="desc fixed">
+                    <h3>Certificate of Excellence for National Quiz on “Computer Awareness” from Samrat Ashok Technological Institute</h3>
+                </div>
+            </div>
+            <div class="contentLine">
+                <hr>
+                <p>Sept 2020</p>
+            </div>
+        </div>
+
+        <div class="section14 sectionRight">
+            <div class="contentLine">
+                <hr>
+                <p>Feb 2021</p>
+            </div>
+            <div class="contentRight content" [ngClass]="{'fade': fade14}">
+                <div class="image fixed">
+                    <img src="assets/img/certificate/certificate10.png" alt="" class="contentImg">
+                </div>
+                <div class="desc fixed">
+                    <h3>Completion of Python and ML bootcamp with ShapeAI.</h3>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- -------------------------------------------------------------------------------------- -->
+        <!-- article division -->
+        <!-- -------------------------------------------------------------------------------------- -->
+
+        <div class="article">
+            <div class="dot15 dot" data-function="fadeFunction15"  #dot15>
+                <img src="assets/img/article/article.png" alt="">
+            </div>
+            <div class="dot16 dot" data-function="fadeFunction16"  #dot16>
+                <img src="assets/img/article/article.png" alt="">
+            </div>
+            <div class="heading">
+                <hr>
+                <h2>
+                    <p class="font1">My &nbsp;</p>
+                    <p class="font2">Articles</p>
+                </h2>
+                <hr>
+            </div>
+            <div class="section15 sectionLeft">
+
+                <div class="contentLeft content" (click)="open15()" [ngClass]="{'fade': fade15}">
+                    <div class="image fixed">
+                        <img src="assets/img/article/article1.png" alt="" class="contentImg">
+                    </div>
+                    <div class="desc fixed">
+                        <h3>How to Set X-Axis Values in Matplotlib?(GeeksForGeeks)</h3>
+                    </div>
+                </div>
+                <div class="contentLine">
+                    <hr>
+                    <p>Nov 2021</p>
+                </div>
+
+
+
+            </div>
+            <div class="section16 sectionRight">
+
+                <div class="contentLine">
+                    <hr>
+                    <p>Nov 2021</p>
+                </div>
+                <div class="contentRight content" (click)="open16()" [ngClass]="{'fade': fade16}">
+                    <div class="image fixed">
+                        <img src="assets/img/article/article2.png" alt="" class="contentImg">
+                    </div>
+                    <div class="desc fixed">
+                        <h3>Python program to convert Dict of list to CSV.(GeeksForGeeks)</h3>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+
+    <!-- -------------------------------------------------------------------------------------- -->
+    <!-- modal for project1 -->
+    <!-- -------------------------------------------------------------------------------------- -->
+
+    <div id="myModal" [ngClass]="{'modal': modal1}" class="fixed-top" #myModal1>
+
+        <div class="modal-content" #modalContent1>
+            <span class="close" (click)="close1()">&times;</span>
+            <div class="title">Know Your Comments</div>
+            <div class="imgs">
+                <div class="slideshow-container">
+
+                    <div class="mySlides fadeSlides mySlides1">
+                        <div class="numbertext">1 / 9</div>
+                        <img src="assets/img/project/project1.1.png" style="width:100%">
+
+                    </div>
+
+                    <div class="mySlides fadeSlides mySlides1">
+                        <div class="numbertext">2 / 9</div>
+                        <img src="assets/img/project/project1.2.png" style="width:100%">
+
+                    </div>
+
+                    <div class="mySlides fadeSlides mySlides1">
+                        <div class="numbertext">3 / 9</div>
+                        <img src="assets/img/project/project1.3.png" style="width:100%">
+
+                    </div>
+
+                    <div class="mySlides fadeSlides mySlides1">
+                        <div class="numbertext">4 / 9</div>
+                        <img src="assets/img/project/project1.4.png" style="width:100%">
+
+                    </div>
+
+                    <div class="mySlides fadeSlides mySlides1">
+                        <div class="numbertext">5 / 9</div>
+                        <img src="assets/img/project/project1.5.png" style="width:100%">
+
+                    </div>
+
+                    <div class="mySlides fadeSlides mySlides1">
+                        <div class="numbertext">6 / 9</div>
+                        <img src="assets/img/project/project1.6.png" style="width:100%">
+
+                    </div>
+
+                    <div class="mySlides fadeSlides mySlides1">
+                        <div class="numbertext">7 / 9</div>
+                        <img src="assets/img/project/project1.7.png" style="width:100%">
+
+                    </div>
+
+                    <div class="mySlides fadeSlides mySlides1">
+                        <div class="numbertext">8 / 9</div>
+                        <img src="assets/img/project/project1.8.png" style="width:100%">
+
+                    </div>
+
+                    <div class="mySlides fadeSlides mySlides1">
+                        <div class="numbertext">9 / 9</div>
+                        <img src="assets/img/project/project1.9.png" style="width:100%">
+
+                    </div>
+
+                    <a class="prev" (click)="plusSlides1(-1)">❮</a>
+                    <a class="next" (click)="plusSlides1(1)">❯</a>
+
+                </div>
+                <br>
+
+                <div style="text-align:center">
+                    <span class="slideDot1" (click)="currentSlide1(1)"></span>
+                    <span class="slideDot1" (click)="currentSlide1(2)"></span>
+                    <span class="slideDot1" (click)="currentSlide1(3)"></span>
+                    <span class="slideDot1" (click)="currentSlide1(4)"></span>
+                    <span class="slideDot1" (click)="currentSlide1(5)"></span>
+                    <span class="slideDot1" (click)="currentSlide1(6)"></span>
+                    <span class="slideDot1" (click)="currentSlide1(7)"></span>
+                    <span class="slideDot1" (click)="currentSlide1(8)"></span>
+                    <span class="slideDot1" (click)="currentSlide1(9)"></span>
+                </div>
+            </div>
+
+            <div class="aboutProject">
+                <div class="about">
+                    <h3>About Project</h3>
+                    <p>In this project, we've created a web-based application using Django, HTML, and CSS to analyze
+                        comments from various social media platforms. Leveraging APIs like "tweepy" for Twitter and
+                        "googleapiclient" for YouTube, our application performs sentiment analysis on user posts. By
+                        categorizing comments as positive, negative, or neutral, it offers valuable insights for content
+                        creators aiming to better understand their audience's preferences. This tool simplifies the
+                        otherwise cumbersome task of manually analyzing comments, making it user-friendly and
+                        personalized for each individual.</p>
+                </div>
+
+                <div class="tech">
+                    <h3>Technology Used</h3>
+                    <ul>
+                        <li>Front-End: HTML 5.0, CSS 3.0</li>
+                        <li>Back-End: Django, Python</li>
+                        <li>Integrated Development Environment : VS-Code</li>
+                        <li>Library: Tweepy, NLTK, googleapiclient</li>
+                    </ul>
+                </div>
+                <button (click)="kyc()">View Project</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- -------------------------------------------------------------------------------------- -->
+    <!-- modal for project2 -->
+    <!-- -------------------------------------------------------------------------------------- -->
+
+    <div id="myModal" [ngClass]="{'modal': modal2}" class="fixed-top" #myModal2>
+
+        <div class="modal-content" #modalContent2>
+            <span class="close" (click)="close2()">&times;</span>
+            <div class="title">Heart Disease Prediction</div>
+            <div class="imgs">
+                <div class="slideshow-container">
+
+                    <div class="mySlides fadeSlides mySlides2">
+                        <div class="numbertext">1 / 5</div>
+                        <img src="assets/img/project/project2.1.png" style="width:100%">
+
+                    </div>
+
+                    <div class="mySlides fadeSlides mySlides2">
+                        <div class="numbertext">2 / 5</div>
+                        <img src="assets/img/project/project2.2.png" style="width:100%">
+
+                    </div>
+
+                    <div class="mySlides fadeSlides mySlides2">
+                        <div class="numbertext">3 / 5</div>
+                        <img src="assets/img/project/project2.3.png" style="width:100%">
+
+                    </div>
+
+                    <div class="mySlides fadeSlides mySlides2">
+                        <div class="numbertext">4 / 5</div>
+                        <img src="assets/img/project/project2.4.png" style="width:100%">
+
+                    </div>
+
+                    <div class="mySlides fadeSlides mySlides2">
+                        <div class="numbertext">5 / 5</div>
+                        <img src="assets/img/project/project2.5.png" style="width:100%">
+
+                    </div>
+
+
+                    <a class="prev" (click)="plusSlides2(-1)">❮</a>
+                    <a class="next" (click)="plusSlides2(1)">❯</a>
+
+                </div>
+                <br>
+
+                <div style="text-align:center">
+                    <span class="slideDot2" (click)="currentSlide2(1)"></span>
+                    <span class="slideDot2" (click)="currentSlide2(2)"></span>
+                    <span class="slideDot2" (click)="currentSlide2(3)"></span>
+                    <span class="slideDot2" (click)="currentSlide2(4)"></span>
+                    <span class="slideDot2" (click)="currentSlide2(5)"></span>
+                </div>
+            </div>
+
+            <div class="aboutProject">
+                <div class="about">
+                    <h3>About Project</h3>
+                    <p>In this project, we've created a web-based application using Django, HTML, and CSS to predict the
+                        likelihood of heart disease and future risk based on user-entered data. Leveraging regression
+                        analysis, including linear regression for percentage predictions and logistic regression for
+                        binary
+                        classification, our application offers real-time assessments. It empowers users to make informed
+                        decisions about their heart health, featuring graphical comparisons, training data, and testing
+                        data. Given the rising incidence of heart issues, this tool serves as a valuable resource for
+                        individuals of all ages seeking to monitor and manage their heart health.</p>
+                </div>
+
+                <div class="tech">
+                    <h3>Technology Used</h3>
+                    <ul>
+                        <li>Front-End: HTML 5.0, CSS 3.0</li>
+                        <li>Back-End: Django, Python</li>
+                        <li>Integrated Development Environment : VS-Code</li>
+                        <li>Data Source: Kaggle.com</li>
+                        <li>Library : Sklearn, Pandas, Matplotlib, Numpy, Random</li>
+                        <li>Data Visualization : Seaborn </li>
+
+                    </ul>
+                </div>
+                <button (click)="hdp()">View Project</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- -------------------------------------------------------------------------------------- -->
+    <!-- modal for project3 -->
+    <!-- -------------------------------------------------------------------------------------- -->
+
+    <div id="myModal" [ngClass]="{'modal': modal3}" class="fixed-top" #myModal3>
+
+        <div class="modal-content" #modalContent3>
+            <span class="close" (click)="close3()">&times;</span>
+            <div class="title">Movie Rating Prediction</div>
+            <div class="imgs">
+                <div class="slideshow-container">
+
+                    <div class="mySlides fadeSlides mySlides3">
+                        <div class="numbertext">1 / 8</div>
+                        <img src="assets/img/project/project3.1.png" style="width:100%">
+
+                    </div>
+
+                    <div class="mySlides fadeSlides mySlides3">
+                        <div class="numbertext">3 / 8</div>
+                        <img src="assets/img/project/project3.2.png" style="width:100%">
+
+                    </div>
+
+                    <div class="mySlides fadeSlides mySlides3">
+                        <div class="numbertext">3 / 8</div>
+                        <img src="assets/img/project/project3.3.png" style="width:100%">
+
+                    </div>
+
+                    <div class="mySlides fadeSlides mySlides3">
+                        <div class="numbertext">4 / 8</div>
+                        <img src="assets/img/project/project3.4.png" style="width:100%">
+
+                    </div>
+
+                    <div class="mySlides fadeSlides mySlides3">
+                        <div class="numbertext">5 / 8</div>
+                        <img src="assets/img/project/project3.5.png" style="width:100%">
+
+                    </div>
+
+                    <div class="mySlides fadeSlides mySlides3">
+                        <div class="numbertext">6 / 8</div>
+                        <img src="assets/img/project/project3.6.png" style="width:100%">
+
+                    </div>
+
+                    <div class="mySlides fadeSlides mySlides3">
+                        <div class="numbertext">7 / 8</div>
+                        <img src="assets/img/project/project3.7.png" style="width:100%">
+
+                    </div>
+
+                    <div class="mySlides fadeSlides mySlides3">
+                        <div class="numbertext">8 / 8</div>
+                        <img src="assets/img/project/project3.8.png" style="width:100%">
+
+                    </div>
+
+
+                    <a class="prev" (click)="plusSlides3(-1)">❮</a>
+                    <a class="next" (click)="plusSlides3(1)">❯</a>
+
+                </div>
+                <br>
+
+                <div style="text-align:center">
+                    <span class="slideDot3" (click)="currentSlide3(1)"></span>
+                    <span class="slideDot3" (click)="currentSlide3(2)"></span>
+                    <span class="slideDot3" (click)="currentSlide3(3)"></span>
+                    <span class="slideDot3" (click)="currentSlide3(4)"></span>
+                    <span class="slideDot3" (click)="currentSlide3(5)"></span>
+                    <span class="slideDot3" (click)="currentSlide3(6)"></span>
+                    <span class="slideDot3" (click)="currentSlide3(7)"></span>
+                    <span class="slideDot3" (click)="currentSlide3(8)"></span>
+                </div>
+            </div>
+
+            <div class="aboutProject">
+                <div class="about">
+                    <h3>About Project</h3>
+                    <p>In this project, we've created a web-based movie rating prediction application using Django,
+                        HTML, and CSS. We explored and compared four regression algorithms: Linear Regression, Decision
+                        Tree
+                        Regressor, K-neighbors Regressor, and Random Forest Regressor to determine the most accurate
+                        predictor. Our user-friendly interface allows users to effortlessly predict movie ratings by
+                        inputting basic details, while also providing insight into the underlying analysis, including
+                        data
+                        visualization and model comparisons. This tool empowers movie enthusiasts and industry
+                        professionals
+                        to make informed decisions regarding film ratings.</p>
+                </div>
+
+                <div class="tech">
+                    <h3>Technology Used</h3>
+                    <ul>
+                        <li>Front-End: HTML 5.0, CSS 3.0</li>
+                        <li>Back-End: Django, Python</li>
+                        <li>Integrated Development Environment : VS-Code</li>
+                        <li>Database: Pandas</li>
+                        <li>Machine Learning Library: Sklearn</li>
+                    </ul>
+                </div>
+                <button (click)="mrp()">View Project</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- -------------------------------------------------------------------------------------- -->
+    <!-- modal for research -->
+    <!-- -------------------------------------------------------------------------------------- -->
+
+    <div id="myModal" [ngClass]="{'modal': modal4}" class="fixed-top" #myModal4>
+
+        <div class="modal-content" #modalContent4>
+            <span class="close" (click)="close4()">&times;</span>
+            <div class="title">ANALYSIS OF TWITTER REVIEWS ON
+                COVID-19</div>
+
+            <div class="aboutProject">
+                <div class="about">
+                    <h3>Abstract</h3>
+                    <p>Currently, a newly born genome COVID declared as pandemic has spread globally and led to
+                        thousands of
+                        deaths, having an enormous impact on health, systems, and economies. COVID pathogenic viral
+                        infection is seeking attention worldwide, whether forcefully or being concerned. In such high
+                        social
+                        pacing, social media platforms have emerged as an alternate way for people to express their
+                        thoughts
+                        and reviews. TWITTER is one of the most popular platforms used worldwide by people to express
+                        their
+                        opinions. Using TWITTER API or Beautiful soul the latest reviews and comments related to
+                        COVID-19
+                        will be extracted and analyzed. The motivation behind this review and analysis is to get
+                        feedback
+                        about how people think about the current situation using their positive or negative sentiment.
+                        Analysis has been done covering various aspects on the basis of economic conditions. Data mining
+                        tools can easily resolve those issues that traditionally were too time-consuming. Data mining of
+                        social networks can be done using graph mining methods such as classification, prediction,
+                        detection, pattern measurement, efficiency, and modeling, which are the basic part of data
+                        mining.
+                        <br>
+                        The global knowledge base should be strengthened for evidence-based decision-making in
+                        preventing
+                        and addressing the COVID-19 pandemic issues.
+                    </p>
+                </div>
+                <button (click)="research()" >View Research Paper</button>
+
+            </div>
+        </div>
+    </div>
+</div>

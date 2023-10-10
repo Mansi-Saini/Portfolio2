@@ -1,0 +1,95 @@
+<!-- <div class="cover" [ngClass]="{'onExitCover': exit}" (click)="cover()">
+    <div class="div1">About Me</div>
+    <div class="div2">
+        I just keep googling stuff and it keeps working..........
+    </div>
+    <div class="div3">
+        Click to know more...
+    </div>
+</div> -->
+
+
+<div class="container">
+    <div class="nav">
+        <p (click)="home()">Home</p>
+        <p (click)="work()">Work</p>
+    </div>
+
+    <div class="content">
+        <div class="image">
+            <hr>
+            <img src="assets/img/aboutPhoto.jpeg" alt="">
+        </div>
+        <div class="pageHeading">About Me</div>
+
+        <div class="about">
+            <p>I'm Mansi Saini, a passionate web developer and machine learning enthusiast. My journey in the world of
+                technology began with a curiosity for solving real-world problems through code. I've worked on a diverse
+                range of projects, spanning from creating dynamic web applications to developing predictive machine
+                learning models. I excel in using HTML, CSS, Bootstrap, and Angular to create visually stunning,
+                user-friendly interfaces. I'm also into machine learning and have worked on projects like sentiment
+                analysis and predictive modelling. I'm committed to stay up-to-date with technology, enjoy
+                collaborating, and thrive on problem-solving. I'm Excited to explore new tech and contribute to the
+                evolving tech landscape.</p>
+        </div>
+
+        <div class="skills">
+            <div class="heading">Skills</div>
+            <div class="skillContent">
+                <div class="lang">
+                    <h4>Languages</h4>
+                    <ul>
+                        <li>Python</li>
+                        <li>Java</li>
+                        <li>C++</li>
+                    </ul>
+                </div>
+                <div class="fw">
+                    <h4>Framework</h4>
+                    <ul>
+                        <li>Angular</li>
+                        <li>Django</li>
+                    </ul>
+                </div>
+                <div class="web">
+                    <h4>Web Technologies</h4>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>Bootstrap</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+        <div class="education">
+            <div class="heading">Education</div>
+            <div class="skillContent">
+                <div class="mca">
+                    <h4>M.C.A</h4>
+                    <p>Bharati Vidyapeeth's Institute of Computers Applications and Management <br>
+                        12/2021 - 06/2023</p>
+                </div>
+                <div class="bsc">
+                    <h4>B.Sc. (Hons.) Computer Science</h4>
+                    <p>
+                        Inderprastha College for Women, University of Delhi <br>
+                        07/2018 - 07/2021
+                    </p>
+                </div>
+                <div class="12">
+                    <h4>12th</h4>
+                    <p>
+                        Kendriya Vidyalaya Nahara, Sonipat, Haryana <br>
+                        04/2017 - 03/2018
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="resume">
+            <button (click)="resume()" >View Resume</button>
+        </div>
+    </div>
+
+</div>
